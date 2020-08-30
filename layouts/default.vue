@@ -1,9 +1,17 @@
 <template>
   <div>
+    <AppNavbarComponent />
     <Nuxt />
   </div>
 </template>
-
+<script>
+import AppNavbarComponent from '@/components/AppNavbarComponent.vue'
+export default {
+  components: {
+    AppNavbarComponent,
+  },
+}
+</script>
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
