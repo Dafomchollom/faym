@@ -1,5 +1,7 @@
 <template>
-  <div class="container-fluid"></div>
+  <div class="container-fluid">
+    <p>music player</p>
+  </div>
 </template>
 
 <script>
