@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <a class="navbar-brand" href="#"
       ><img src="@/assets/images/faymlogo.png" width="100" height="100" alt=""
     /></a>

@@ -31,6 +31,11 @@ export default {
         href:
           'https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap',
       },
+      {
+        rel: 'stylesheet',
+        href:
+          'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
+      },
     ],
   },
   /*

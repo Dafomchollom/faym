@@ -18,7 +18,7 @@ export default {
 <style>
 .landing-page-wrapper {
   margin: 0 auto;
-  min-height: 190vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
