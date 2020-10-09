@@ -11,17 +11,30 @@
         </div>
       </div>
       <div class="play-buttons-wrapper">
-        <button class="repeat">
+        <button class="custom-btn repeat">
           <i class="ion-ios-loop"></i>
         </button>
-        <button class="prev">
+        <button class="custom-btn prev">
           <i class="ion-ios-skipbackward"></i>
         </button>
-        <button class="play"><i class="ion-play"></i></button>
-        <button class="next"><i class="ion-ios-skipforward"></i></button>
-        <button class="shuffle"><i class="ion-ios-shuffle"></i></button>
+        <button class="custom-btn play"><i class="ion-play"></i></button>
+        <button class="custom-btn next">
+          <i class="ion-ios-skipforward"></i>
+        </button>
+        <button class="custom-btn shuffle">
+          <i class="ion-ios-shuffle"></i>
+        </button>
       </div>
-      <div class=""></div>
+      <div class="actions-button_wrapper">
+        <button class="custom-btn volumn">
+          <i class="ion-volume-low"></i>
+        </button>
+        <div class="seek-bar">
+          <div class="fill"></div>
+          <div class="handle"></div>
+        </div>
+        <button class="custom-btn bars"><i class="ion-drag"></i></button>
+      </div>
       <!-- <div class="seek-bar">
         <div class="fill"></div>
         <div class="handle"></div>
@@ -52,7 +65,7 @@ $brown: #feecae;
     // align-items: center;
     background: #1d1d1d;
     .album-art-wrapper {
-      width: 33.33%;
+      width: 33.333%;
       text-align: left;
       display: flex;
       flex-wrap: wrap;
@@ -91,21 +104,12 @@ $brown: #feecae;
       }
     }
     .play-buttons-wrapper {
-      width: 33.33%;
+      width: 33.333%;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      button {
-        display: block;
-        border: 0;
-        color: white;
-        border-radius: 100000px;
-        margin: 0px 15px;
-        font-size: 27px;
-        background: transparent;
-      }
-      button.play {
+      .play {
         width: 105px;
         height: 105px;
         background-color: $brown;
@@ -115,34 +119,52 @@ $brown: #feecae;
         cursor: pointer;
       }
     }
-
-    .seek-bar {
-      margin: 30px;
-      width: 400px;
-      background-color: white;
-      display: flex;
-      align-items: center;
+    .custom-btn {
+      display: block;
+      border: 0;
+      color: white;
       border-radius: 100000px;
-      cursor: pointer;
-
-      .fill {
-        height: 10px;
-        background-color: $brown;
-        border-radius: 100000px;
+      margin: 0px 15px;
+      font-size: 27px;
+      background: transparent;
+    }
+    .actions-button_wrapper {
+      width: 33.333%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      .custom-btn {
+        font-size: 40px;
       }
-
-      .handle {
-        width: 10px;
-        height: 10px;
-        background-color: $brown;
+      .seek-bar {
+        margin: 30px;
+        width: 400px;
+        background-color: white;
+        display: flex;
+        align-items: center;
         border-radius: 100000px;
-        margin-left: -5px;
-        transform: scale(2);
-        transition: all 0.1s;
+        cursor: pointer;
 
-        &:hover {
-          background-color: lighten($brown, 10%);
-          transform: scale(3);
+        .fill {
+          height: 10px;
+          background-color: $brown;
+          border-radius: 100000px;
+        }
+
+        .handle {
+          width: 10px;
+          height: 10px;
+          background-color: $brown;
+          border-radius: 100000px;
+          margin-left: -5px;
+          transform: scale(2);
+          transition: all 0.1s;
+
+          &:hover {
+            background-color: lighten($brown, 10%);
+            transform: scale(3);
+          }
         }
       }
     }
