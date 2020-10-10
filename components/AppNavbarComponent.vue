@@ -31,6 +31,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#">SHOP</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="ion-drag"></i></a>
+        </li>
       </ul>
     </div>
   </nav>
